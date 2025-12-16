@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { MyAppNav } from "../MyAppNav";
-import logo from './../../../src/assets/images/LANAVE.png';
-import homeBg1 from './../../../src/assets/images/Home_background_1.png';
+import logo from './../../../src/assets/images/LANAVE.webp';
+import homeBg1 from './../../../src/assets/images/Home_background_1.webp';
 
 export function Home() {
 

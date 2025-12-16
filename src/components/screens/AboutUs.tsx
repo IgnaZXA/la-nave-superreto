@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { MyAppNav } from "../MyAppNav";
-import aboutUs from './../../../src/assets/images/AboutUs.png';
+import aboutUs from './../../../src/assets/images/AboutUs.webp';
 
 export function AboutUs() {
 
@@ -11,7 +11,7 @@ export function AboutUs() {
     background-position: center;
     display: flex;
     width: 100%;
-    height: 90vh ;
+    height: 90vh;
   `;
 
   const StyledTextDiv = styled.div`
@@ -26,14 +26,13 @@ export function AboutUs() {
     padding: 2vw;
     margin-top: 3vh;
     width: 100%;
-    height: 30%;
+    height: 25vh;
     font-size: 1vw;
   `;
 
   const StyledText = styled.p`
     padding: 2vw;
   `;
-
 
   return (
     <>
