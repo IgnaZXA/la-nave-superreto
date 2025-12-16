@@ -30,13 +30,16 @@ export function MyAppNav() {
 
   const NavLinkContainer = styled.div`
     margin: 0px 8vh 1vw 2vh;
+    padding: 10px 10px 10px 10px;
+    border-radius: 20vw;
+    border: 0.1vw solid rgba(250, 156, 14, 1);
   `;
 
   return (
     <StyledNavContainer>
       <nav>
         <NavLinkContainer>
-          <NavLink to="/" end> La Nave</NavLink>
+          <NavLink to="/" end>La Nave</NavLink>
         </NavLinkContainer>
         
         <NavLinkContainer>
