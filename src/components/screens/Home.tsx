@@ -2,6 +2,7 @@ import { MyAppNav } from "../MyAppNav";
 import styled from "styled-components";
 import logo from './../../../src/assets/images/LANAVE.webp';
 import homeBg1 from './../../../src/assets/images/Home_background_1.webp';
+import { Footer } from "./Footer";
 
 export function Home() {
 
@@ -42,7 +43,7 @@ const StyledFirstHomeSection = styled.div`
   `;
   
   const StyledLogoImage = styled.img`
-    box-shadow: rgba(182, 111, 19, 1) 0.8vh 0.1vh 0.5vh 0.5vh;
+    box-shadow: rgba(182, 111, 19, 0.8) 0.8vh 0.1vh 0.5vh 0.5vh;
     border: 0.25vh solid rgba(255, 123, 0, 0.77);
     width: 14vw;
     height: 14vw;
@@ -58,16 +59,6 @@ const StyledFirstHomeSection = styled.div`
     margin: 0;
   `;
 
-  const StyledWhereWeAre = styled.div`
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 2rem;           
-    border: 1px solid white;
-    background-color: rgba(0, 0, 0, 0.51);
-    min-height: 80vh;
-  `;
-
   return (
     <>
       <MyAppNav />
@@ -80,8 +71,8 @@ const StyledFirstHomeSection = styled.div`
             </StyledLogoContainer>
           </Container>
         </StyledFirstHomeSection>
-        <StyledWhereWeAre>
-        </StyledWhereWeAre>
+        <Footer />
+
       </StyledHome>
     </>
   );

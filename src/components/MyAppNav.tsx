@@ -4,7 +4,6 @@ import styled from "styled-components";
 export function MyAppNav() {
 
   const StyledNavContainer = styled.div`
-    
     border: 1px solid rgba(255, 174, 0, 0.39);
     background-color: rgba(32, 32, 32, 1);
     padding: 2.5vw 0px 0px 0px;
@@ -12,7 +11,7 @@ export function MyAppNav() {
     
     nav {
       display: flex;
-      gap: 2rem;      
+      gap: 6rem;      
       align-items: center;
     }
 
@@ -20,6 +19,13 @@ export function MyAppNav() {
       text-decoration: none;
       color: rgb(255,255,255);
       font-weight: 500;
+      margin: 0 2px;
+      display: inline-block;
+      transition: transform 0.3s cubic-bezier(.34,1.56,.64,1);
+    }
+
+    a:hover {
+      transform: scale(1.15);
     }
 
     a.active {
@@ -30,7 +36,7 @@ export function MyAppNav() {
 
   const NavLinkContainer = styled.div`
     margin: 0px 8vh 1vw 2vh;
-    padding: 10px 10px 10px 10px;
+    padding: 10px;
     border-radius: 20vw;
     border: 0.1vw solid rgba(250, 156, 14, 1);
   `;
@@ -41,11 +47,11 @@ export function MyAppNav() {
         <NavLinkContainer>
           <NavLink to="/" end>La Nave</NavLink>
         </NavLinkContainer>
-        
+
         <NavLinkContainer>
           <NavLink to="/AboutUs" end>Sobre Nosotros</NavLink>
         </NavLinkContainer>
-        
+
         <NavLinkContainer>
           <NavLink to="/MakeReservation">Haz una reserva</NavLink>
         </NavLinkContainer>
