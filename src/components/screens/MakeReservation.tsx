@@ -13,15 +13,15 @@ export function MakeReservation() {
 
           <StyledOptionsContainer>
             <StyledButton>
-              <h2>Hacer reserva de un día</h2>
+              <StyledButtonText>Hacer reserva de un día</StyledButtonText>
             </StyledButton>
 
             <StyledButton>
-              <h2>Hacer una reserva de una semana</h2>
+              <StyledButtonText>Hacer una reserva de una semana</StyledButtonText>
             </StyledButton>
 
             <StyledButton>
-              <h2>Hacer una reserva de un mes</h2>
+              <StyledButtonText>Hacer una reserva de un mes</StyledButtonText>
             </StyledButton>
           </StyledOptionsContainer>
 
@@ -37,8 +37,12 @@ export function MakeReservation() {
 }
 
 /* =========================
-   CONTAINERS
+  CONTAINERS
 ========================= */
+
+const StyledButtonText = styled.h2`
+  font-size: 2vw;
+`;
 
 const StyledScreenContainer = styled.div`
   min-height: 70vh;
@@ -58,6 +62,7 @@ const StyledButtonContainer = styled.div`
   border-radius: 20px;
   border: 3px solid #FFC60B;
   background-color: #444444;
+
 
   display: flex;
   flex-direction: column;
@@ -79,7 +84,7 @@ const StyledOptionsContainer = styled.div`
 ========================= */
 
 const StyledTitle = styled.h1`
-  font-size: clamp(1.6rem, 2.5vw, 3.2rem);
+  font-size: 2.25vw;
   font-weight: bold;
   text-align: center;
 `;
@@ -90,7 +95,7 @@ const StyledTitle = styled.h1`
 const StyledButton = styled.button`
   min-width: 240px;
   width: 25vw;
-  padding: clamp(14px, 2vw, 20px);
+  padding: 1.5vw 1vw; /* padding también escalable */
   border-radius: 12px;
   border: none;
   cursor: pointer;
@@ -106,7 +111,7 @@ const StyledButton = styled.button`
   transition: transform 0.2s, box-shadow 0.2s;
 
   h2 {
-    font-size: clamp(1rem, 1.4vw, 1.4rem);
+    font-size: 1.5vw; /* texto escalable con la pantalla */
     margin: 0;
     text-align: center;
   }
@@ -116,7 +121,6 @@ const StyledButton = styled.button`
     box-shadow: 0px 10px 35px rgba(0, 0, 0, 0.4);
   }
 `;
-
 const StyledMemberButton = styled.button`
   margin-top: 20px;
   padding: clamp(14px, 2vw, 20px) clamp(30px, 4vw, 50px);

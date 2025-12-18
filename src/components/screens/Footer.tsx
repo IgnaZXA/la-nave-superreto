@@ -18,7 +18,7 @@ export function Footer() {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 3rem;
+    gap: 5vw;
     max-width: 1200px;
     width: 100%;
   `;
@@ -28,11 +28,12 @@ export function Footer() {
     flex-direction: column;
     align-items: flex-start;
     width: 200px;
+    margin: 2vw; /* margen extra para separar columnas */
   `;
 
   const FooterTitle = styled.h3`
     margin-bottom: 1rem;
-    font-size: 1.2rem;
+    font-size: 1.8vw; /* escalable */
     font-weight: 600;
     text-transform: uppercase;
   `;
@@ -42,6 +43,7 @@ export function Footer() {
     text-decoration: none;
     margin-bottom: 0.5rem;
     font-weight: 300;
+    font-size: 1.2vw; /* escalable */
     transition: color 0.2s;
 
     &:hover {
@@ -52,6 +54,7 @@ export function Footer() {
   const FooterInfo = styled.p`
     margin: 0.3rem 0;
     font-weight: 300;
+    font-size: 1.2vw; /* escalable */
   `;
 
   return (

@@ -52,7 +52,7 @@ const StyledFirstHomeSection = styled.div`
 
   const StyledSlogan = styled.p`
     color: white;
-    font-size: 1.6rem;
+    font-size: 2vw;
     font-weight: 300;
     letter-spacing: 0.15rem;
     text-shadow: 0 0 30px rgba(0, 0, 0, 0.8);

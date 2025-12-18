@@ -39,6 +39,8 @@ const NavLinkContainer = styled.div`
   padding: 0.5rem 1.2rem;
   border-radius: 1rem;
   border: 1px solid rgba(250, 156, 14, 1);
+  font-size: 1.5vw;
+  padding: 1vw;
   
   @media (max-width: 600px) {
     padding: 0.3rem 0.8rem;
