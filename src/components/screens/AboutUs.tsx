@@ -12,8 +12,8 @@ export function AboutUs() {
     background-size: cover;           
     background-position: center;
     display: flex;
-    justify-content: center;  /* centra horizontalmente */
-    align-items: flex-start;  /* empieza desde arriba */
+    justify-content: center;
+    align-items: flex-start;
     width: 100%;
     min-height: 90vh;
     padding: 2vh 0;
@@ -29,12 +29,17 @@ export function AboutUs() {
     border-radius: 3vw;
     padding: 2vw;
     width: 70%;
-    font-size: 1vw;
-    margin: 3vh 0 2vh 0;  /* separa del container */
+    font-size: 1.75vw;
+    margin: 3vh 0 2vh 0;
   `;
 
   const StyledTitle = styled.h3`
-    font-size: 2vw;
+    font-size: 2.5vw;
+    margin-bottom: 1vh;
+  `;
+
+  const StyledSubtitle = styled.h2`
+    font-size: 2.25w;
     margin-bottom: 1vh;
   `;
 
@@ -54,16 +59,17 @@ export function AboutUs() {
         <StyledTextDiv>
           <StyledTitle>¿No encontráis dónde hacer vuestros planes?</StyledTitle>
           <StyledText>
-            Nuestra empresa se dedica a ofrecer espacios flexibles dentro de una nave industrial, 
-            facilitando el alquiler de salas equipadas para grupos de personas. 
-            Nuestro objetivo es proporcionar un entorno cómodo y funcional donde equipos, 
-            asociaciones o colectivos puedan reunirse, trabajar en proyectos, realizar talleres o encuentros, 
-            sin preocuparse por la logística de un espacio propio. Cada sala está diseñada para adaptarse a diferentes necesidades, 
-            ofreciendo privacidad, amplitud y las comodidades necesarias para que cada reunión o actividad se desarrolle de manera óptima.
+            Ofrecemos salas flexibles dentro de nuestra nave, listas para que grupos de amigos se reúnan, jueguen, trabajen en proyectos o simplemente pasen un buen rato juntos. Cada espacio está equipado y pensado para que os sintáis cómodos, con privacidad y todo lo necesario para disfrutar sin preocupaciones.
           </StyledText>
 
-          <StyledTitle>¿Dónde nos podeis encontrar?</StyledTitle>
-          <StyledText>Nos podeis encontrar en Oiartzun, Astigarrako Bidea.</StyledText>
+          <StyledSubtitle>¿A quién no le gusta la fiesta?</StyledSubtitle>
+          <StyledText>
+            Y si os apetece seguir la diversión, muy cerca hay una discoteca para
+            continuar la noche bailando y disfrutando.
+          </StyledText>
+
+          <StyledTitle>¿Dónde nos podéis encontrar?</StyledTitle>
+          <StyledText>Nos podéis encontrar en la calle: Oiartzun, Astigarrako Bidea.</StyledText>
 
           <MapLink
             href="https://www.google.es/maps/@43.3004689,-1.8809756,20.35z"
