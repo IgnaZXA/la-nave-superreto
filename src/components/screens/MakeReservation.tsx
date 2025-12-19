@@ -25,9 +25,13 @@ export function MakeReservation() {
             </StyledButton>
           </StyledOptionsContainer>
 
+          <StyledButtonText>Hazte socio y disfruta de unos descuentos increibles!</StyledButtonText>
           <StyledMemberButton>
-            Hazte socio y disfruta
+            Hazte socio
           </StyledMemberButton>
+
+          <StyledButtonText>Si te haces socio de La Nave tienes un descuento del 30% en las sociedades!</StyledButtonText>
+
         </StyledButtonContainer>
       </StyledScreenContainer>
 
@@ -41,7 +45,7 @@ export function MakeReservation() {
 ========================= */
 
 const StyledButtonText = styled.h2`
-  font-size: 2vw;
+  font-size: 1.25vw;
 `;
 
 const StyledScreenContainer = styled.div`
@@ -57,8 +61,7 @@ const StyledScreenContainer = styled.div`
 
 const StyledButtonContainer = styled.div`
   width: 85vw;
-  height: min(60vh, 700px);
-
+  
   border-radius: 20px;
   border: 3px solid #FFC60B;
   background-color: #444444;
@@ -129,6 +132,7 @@ const StyledMemberButton = styled.button`
   border-radius: 12px;
   border: none;
   cursor: pointer;
+  margin-bottom: 2vh;
 
   width: 60%;
   height: 25%;
